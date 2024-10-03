@@ -1,20 +1,16 @@
 {
-    "name": "fullstack-app",
-    "version": "1.0.0",
-    "private": true,
-    "scripts": {
-      "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
-      "start:frontend": "cd frontend && npm start",
-      "start:backend": "cd backend && npm start"
-  "start": "react-scripts start",
-  "build": "react-scripts build",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject"
-
-
-    },
-    "dependencies": {
-      "concurrently": "^9.0.1"
-    }
+  "name": "fullstack-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+    "start:frontend": "cd frontend && npm start",
+    "start:backend": "cd backend && npm start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "concurrently": "^9.0.1"
   }
-  
+}
