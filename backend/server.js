@@ -5,7 +5,7 @@ const speakeasy = require('speakeasy');  // Add speakeasy for 2FA
 const qrcode = require('qrcode');  // Add qrcode for QR code generation
 
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 3001;
 
 const API_KEY = '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';
 
