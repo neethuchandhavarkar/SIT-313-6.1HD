@@ -12,6 +12,11 @@ const API_KEY = 'sk-proj-aHOYdyGpKkJZ8UI9yjTMJs_130Gpl1Q_u1uPKO0KjF-vIiOC49lcfZy
 app.use(cors());
 app.use(express.json()); // Middleware to parse JSON
 
+// Root route
+app.get('/', (req, res) => {
+  res.send('Welcome to the API!'); // Simple response for the root URL
+});
+
 // API route for ChatGPT requests
 app.post('/api/chat', async (req, res) => {
   const message = req.body.message;
