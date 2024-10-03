@@ -1,0 +1,105 @@
+/* Container for the home page, centers content and sets a minimum height */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header styling: centers text, adds background and padding */
+.home-header {
+    text-align: center;
+    background-color: #282c34;
+    color: #fff;
+    padding: 40px 20px;
+    width: 100%;
+}
+
+/* Main header title styling */
+.home-header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+/* Sub-header paragraph styling with color contrast */
+.home-header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #61dafb;
+}
+
+/* Main content container: wraps and centers feature cards */
+.home-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 40px 20px;
+    width: 100%;
+}
+
+/* Feature card styling: sets layout, shadow, and transition for hover effect */
+.feature-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+/* Hover effect on feature cards: elevates the card */
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Feature card title styling */
+.feature-card h2 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+/* Feature card description styling */
+.feature-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Footer styling: background and text alignment */
+.home-footer {
+    background-color: #282c34;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Footer text styling */
+.home-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Sign-out button styling */
+.signout-button {
+    background-color: #ff4b5c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.2s ease;
+}
+
+.signout-button:hover {
+    background-color: #ff2b3a;
+}

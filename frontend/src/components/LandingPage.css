@@ -1,0 +1,45 @@
+/* LandingPage.css */
+
+.landing-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://picsum.photos/1600/900?blur'); /* Hero background image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero-content {
+    color: white;
+    text-align: center;
+  }
+  
+  .landing-title {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .landing-subtitle {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .get-started-btn {
+    background-color: #21ba45 !important;
+    color: white !important;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    transition: transform 0.3s ease;
+  }
+  
+  .get-started-btn:hover {
+    transform: scale(1.05);
+    background-color: #16ab39 !important;
+  }
+  

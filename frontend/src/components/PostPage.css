@@ -1,0 +1,17 @@
+/* src/components/PostPage.css */
+.post-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  input, textarea {
+    border-radius: 5px !important;
+  }
+  
+  button {
+    margin-top: 1rem;
+  }
+  

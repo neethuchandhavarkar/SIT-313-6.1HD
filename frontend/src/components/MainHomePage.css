@@ -1,0 +1,68 @@
+/* MainHomePage.css */
+
+.homepage {
+  padding-top: 80px; /* To account for the fixed header */
+}
+
+.main-content {
+  margin-top: 2rem;
+}
+
+.homepage-header {
+  margin-bottom: 3rem;
+}
+
+.homepage-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.homepage-description {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.ui.grid {
+  justify-content: center; /* Center cards in the grid */
+}
+
+.ui.grid > .column {
+  padding: 1rem; /* Adjust padding around each column */
+}
+
+/* Set a consistent size for cards */
+.tutorial-card,
+.article-card {
+  margin: 0 auto; /* Center the cards */
+  margin-bottom: 2rem; /* Space below each card */
+  min-height: 350px; /* Set a minimum height to ensure uniformity */
+  width: 100%; /* Ensure cards take full width of the column */
+  display: flex; /* Ensure children align properly */
+  flex-direction: column; /* Allow content to stack */
+}
+
+.tutorial-card .ui.image,
+.article-card .ui.image {
+  flex-grow: 1; /* Allow images to grow and fill space */
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+}

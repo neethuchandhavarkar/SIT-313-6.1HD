@@ -1,0 +1,53 @@
+/* Header1.css */
+
+/* Main Header Styling */
+.main-header {
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Fixes the header to the top */
+  top: 0;
+  width: 100%;
+  flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+}
+
+/* Logo Styling */
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  white-space: nowrap; /* Prevents the logo from breaking into multiple lines */
+  padding-left: 1rem; /* Provides some padding to avoid left-side crowding */
+}
+
+/* Button Styling */
+.header-btn {
+  margin-left: 1rem;
+  white-space: nowrap; /* Prevents the buttons from wrapping inside themselves */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .header-btn {
+    display: block; /* Stacks buttons vertically */
+    width: 100%; /* Makes buttons full-width on smaller screens */
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  /* Ensure logo remains readable on smaller screens */
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  /* Adjust header padding on smaller screens */
+  .main-header {
+    padding: 0.5rem;
+  }
+}
