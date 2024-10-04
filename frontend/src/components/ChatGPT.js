@@ -46,17 +46,17 @@ const ChatGPT = () => {
 
   // Render the component
   return (
-    <div className="chat-container">  // Main container for the chat interface
-      <h2 className="chat-header">ChatGPT Service</h2>  // Header for the chat service
+    <div className="chat-container"> 
+      <h2 className="chat-header">ChatGPT Service</h2>  
       {error && <div className="error-message">{error}</div>} {/* Display error message if exists */}
-      <div className="messages-container">  // Container to display chat messages
+      <div className="messages-container"> 
         {responses.map((msg, index) => (  // Map through responses to render each message
-          <div key={index} className={`message ${msg.role}`}>  // Use role to style messages differently
+          <div key={index} className={`message ${msg.role}`}> 
             <strong>{msg.role === 'user' ? 'You' : 'ChatGPT'}:</strong> {msg.content} {/* Display message content */}
           </div>
         ))}
       </div>
-      <form className="input-form" onSubmit={handleSubmit}>  // Form for user input
+      <form className="input-form" onSubmit={handleSubmit}>  
         <input
           type="text"
           value={inputMessage}  // Bind input value to inputMessage state
@@ -64,8 +64,8 @@ const ChatGPT = () => {
           placeholder="Type your message..."  // Placeholder text in the input field
           className="chat-input"  // CSS class for styling
         />
-        <button type="submit" className="send-button" disabled={loading}>  // Button to submit the input
-          {loading ? 'Sending...' : 'Send'}  // Change button text based on loading state
+        <button type="submit" className="send-button" disabled={loading}>  
+          {loading ? 'Sending...' : 'Send'}  
         </button>
       </form>
     </div>
