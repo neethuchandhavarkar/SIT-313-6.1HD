@@ -48,21 +48,21 @@ const TwoFactorAuth = () => {
 
   // Render the component
   return (
-    <div className="two-factor-container">  // Main container for 2FA
+    <div className="two-factor-container">  
       <h2 className="two-factor-header">Two-Factor Authentication (2FA)</h2>
 
-      // Show loading message while the QR code is being generated
+     
       {loading && <p className="loading-message">Loading QR Code...</p>}
 
-      // Display the QR code image if it's available
+    
       {qrCode && <img src={qrCode} alt="Scan QR code with Google Authenticator" className="qr-code" />}
-      // Show error message if there was an error during QR code generation
+      
       {error && <p className="error-message">{error}</p>}
       
-      // Instructions for the user to scan the QR code
+     
       <p className="qr-instructions">Scan the QR code with your authenticator app</p>
 
-      // Input field for user to enter the OTP
+      
       <input
         type="text"
         placeholder="Enter the OTP"  // Placeholder text in the input field
@@ -70,10 +70,10 @@ const TwoFactorAuth = () => {
         onChange={(e) => setOtp(e.target.value)}  // Update otp state on input change
         className="otp-input"  // CSS class for styling
       />
-      // Button to trigger OTP verification
+     
       <button onClick={handleOtpSubmit} className="verify-button">Verify OTP</button>
 
-      // Display the result message (success/error) to the user
+      
       {message && <p className="result-message">{message}</p>}
     </div>
   );
